@@ -21,7 +21,8 @@ def post_order(array):
     # 위의 코드 개량
     # 첫번째 값을 루트 노드로 설정
     root = array[0]
-    # 나머지 배열에 대해 for문을 돌면서 루트보다 커지는 부분을 기록해서 L과 R로 나눈다.
+    # 나머지 배열에 대해 for문을 돌면서 루트보다 커지는 부분을 기록해서 L과 R로 나눈다. 
+    # 이미 정렬된 이진 트리 배열이기 때문에 루트 값 기준으로 무조건 낮은값만 있고 그 이후에는 큰 값만있다
     for i in range(1, len(array)):
         if array[i] > root:
             arr_left = array[1:i]
