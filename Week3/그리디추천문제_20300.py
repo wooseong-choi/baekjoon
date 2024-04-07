@@ -5,3 +5,4 @@ for idx,i in enumerate(temp):
     arr.append(((idx+1),i))
 
 print(arr)
+
